@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Conceptual design HTML Template</title>
+
+	<!----download-file-pathe----->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <!-------font-family---------->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!---html-css-link--->
+    <!---<link rel="stylesheet" href="./css/responsive.css">--->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <!----------------------Top header-------------------->
+    <div class="header">
+        <div class="container-fluid p-0">
+            <div class="top-header">
+                <div class="top-header-logo">
+                    <a href="">
+                        <img src="./image/logo-w.png">
+                    </a>
+                </div>
+                <div class="top-header-responsive-div">
+                    <a href="">
+                        <img src="./image/responsive-desktop.png">
+                    </a>
+                    <a href="">
+                        <img src="./image/responsive-laptop.png">
+                    </a>
+                    <a href="">
+                        <img src="./image/responsive-tablet.png">
+                    </a>
+                    <a href="">
+                        <img src="./image/responsive-phone-horizontal.png">
+                    </a>
+                    <a href="">
+                        <img src="./image/responsive-phone.png">
+                    </a>
+                </div>
+                <div class="top-header-close-div">
+                    <a href="" class="anchorpadding">
+                        <img src="./image/icon-close.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-----navbar----->
+        <div class="nav-bar" style="height: 70px;">
+            <div class="container">
+                <div class="nav-div">
+                    <div class="logo-div-1">
+                        <a href="https://nicepage.com" title="logo" target="_blank">
+                            <img src="./image/default-logo.png">
+                        </a>
+                    </div>
+                    <div class="icon-div">
+                        <a href="">
+                            <i class="fa fa-facebook icon-div-1" aria-hidden="true" title="facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-twitter icon-div-2" aria-hidden="true" title="twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-instagram icon-div-3" aria-hidden="true" title="instagram"></i>
+                        </a>
+                        <div class="menu-icon-div">
+                            <i class="fa fa-bars" title="menu-bar" aria-hidden="true" onclick="cartFunction()"></i></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----right-menubar-(on click)--->
+            <div class="right-menu-bg" id="JSheadercart">
+                <div class="right-menubar">
+                    <div class="right-menubar-closeicon">
+                        <i class="fa fa-times" title="close" aria-hidden="true" onclick="cartRK()"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="index.html">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="dog.html">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 4</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 5</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-menu-bg2"></div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!----------------------dog-about--------------------->
+    <section class="dog-about w-100">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="dog-bg-color"></div>
+                <div class="dog-bg-color-1">
+                    <div class="dog-po-div"></div>
+                    <img src="./image/dog.jpg" alt="./image/dog.jpg">
+                    <div class="dog-text-box">
+                        <h2>10 Reasons</h2>
+                        <h3>Why Pets Are Good For Kids</h3>
+                        <p class="dog-paragraph-1">
+                            Phasellus scelerisque sed leo quis gravida. Fusce lobortis libero ut arcu blandit pharetra.
+                        </p>
+                        <p class="dog-paragraph-2">
+                            Image from
+                            <a href="https://www.freepik.com/free-photos-vectors/dog" title="click me" target="_blank">
+                                <b>Freepik</b>
+                            </a> 
+                        </p>
+                        <button class="dog-btn" title="button">learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------Footer------------->
+    <div class="conceptual-footer">
+        <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        <p class="last-div">
+            <a href="https://nicepage.com/website-templates" title="click me" target="_blank">Website Templates</a>
+            created with
+            <a href="https://nicepage.com/" title="click me" target="_blank"> Website Builder Software.</a>
+        </p>
+    </div>
+
+    <!------------------------------>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+
+    <!--------------navbar-menubar---(on click)--------->
+    <script type="text/javascript">
+        <!---------cart button-(on click button)------------->
+
+        function cartFunction() {
+           var element = document.getElementById("JSheadercart");
+           element.classList.add("show-header-cart");
+        }
+
+       <!-------remove button--(close button)------>
+        function cartRK() {
+           var element = document.getElementById("JSheadercart");
+           element.classList.remove("show-header-cart");
+        }
+    </script>
+</body>
+</html>

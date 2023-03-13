@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Conceptual design HTML Template</title>
+
+	<!----download-file-pathe----->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <!-------font-family---------->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!---html-css-link--->
+    <link rel="stylesheet" href="./css/lightgallery.min.css">
+    <!---<link rel="stylesheet" href="./css/responsive.css">---->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    
+    <!----------------------Top header-------------------->
+    <div class="header">
+    	<div class="container-fluid p-0">
+			<div class="top-header">
+				<div class="top-header-logo">
+    				<a href="">
+		    			<img src="./image/logo-w.png">
+		    		</a>
+				</div>
+				<div class="top-header-responsive-div">
+    				<a href="">
+		    			<img src="./image/responsive-desktop.png">
+		    		</a>
+		    		<a href="">
+		    			<img src="./image/responsive-laptop.png">
+		    		</a>
+		    		<a href="">
+		    			<img src="./image/responsive-tablet.png">
+		    		</a>
+		    		<a href="">
+		    			<img src="./image/responsive-phone-horizontal.png">
+		    		</a>
+		    		<a href="">
+		    			<img src="./image/responsive-phone.png">
+		    		</a>
+				</div>
+	    		<div class="top-header-close-div">
+		    		<a href="" class="anchorpadding">
+		    			<img src="./image/icon-close.png">
+		    		</a>
+	    		</div>
+	    	</div>
+    	</div>
+    	<!-----navbar----->
+    	<div class="nav-bar" style="height: 70px;">
+	    	<div class="container">
+	    		<div class="nav-div">
+		    		<div class="logo-div-1">
+		    			<a href="https://nicepage.com" title="logo" target="_blank">
+		    				<img src="./image/default-logo.png">
+		    			</a>
+		    		</div>
+		    		<div class="icon-div">
+		    			<a href="">
+		    				<i class="fa fa-facebook icon-div-1" aria-hidden="true" title="facebook"></i>
+		    			</a>
+		    			<a href="">
+		    				<i class="fa fa-twitter icon-div-2" aria-hidden="true" title="twitter"></i>
+		    			</a>
+		    			<a href="">
+		    				<i class="fa fa-instagram icon-div-3" aria-hidden="true" title="instagram"></i>
+		    			</a>
+		    			<div class="menu-icon-div">
+		    			    <i class="fa fa-bars" title="menu-bar" aria-hidden="true" onclick="cartFunction()"></i></i>
+		    		    </div>
+		    		</div>
+		    	</div>
+	    	</div>
+            <!----right-menubar-(on click)--->
+            <div class="right-menu-bg" id="JSheadercart">
+            	<div class="right-menubar">
+		        	<div class="right-menubar-closeicon">
+		        		<i class="fa fa-times" title="close" aria-hidden="true" onclick="cartRK()"></i>
+		        	</div>
+		        	<ul>
+		        		<li>
+		        			<a href="index.html">Page 1</a>
+		        		</li>
+		        		<li>
+		        			<a href="dog.html">Page 2</a>
+		        		</li>
+		        		<li>
+		        			<a href="#">Page 3</a>
+		        		</li>
+		        		<li>
+		        			<a href="#">Page 4</a>
+		        		</li>
+		        		<li>
+		        			<a href="#">Page 5</a>
+		        		</li>
+		        	</ul>
+	            </div>
+	            <div class="right-menu-bg2"></div>
+            </div>
+	    	
+        </div>
+    </div>
+    
+    <!----------------------about------------------------->
+    <div class="about">
+    	<div class="container-fluid">
+    		<div class="row">
+    			<div class="col-sm-12 col-md-6 col-lg-6 p-0">
+    				<div class="about-imgbox"></div>
+    			</div>
+    			<div class="col-sm-12 col-md-6 col-lg-6 p-0">
+    				<div class="dis-play-div">
+	    				<div class="about-textbox">
+	    					<h1>Hello, I’m John.</h1>
+	    					<h6>Graphic Designer</h6>
+	    					<p class="about-textbox-paddingbox-1">
+	    						Sed efficitur arcu ac sapien pharetra, id feugiat dolor luctus. Aenean placerat mi eu enim porta dictum.
+	    					</p>
+	    					<p class="about-textbox-paddingbox-2">
+	    						Image from 
+	    						<a href="https://www.freepik.com/photos/business" title="click me"> Freepik</a>
+	    					</p>
+	    					<p class="about-textbox-paddingbox-3">
+	    						<span>
+	    							<i class="fa fa-phone" aria-hidden="true"></i>
+	    						</span>
+	    						Phone:
+	    						<a href="tel: +123456789" title="click me"> +123 456 789</a>
+	    					</p>
+	    					<p class="about-textbox-paddingbox-4">
+	    						<span>
+	    							<i class="fa fa-envelope" aria-hidden="true"></i>
+	    						</span>
+	    						Email: 
+	    						<a href="#" title="click me">
+	    						  info@youremailidhere.com
+	    						</a> 	
+	    					</p>
+	    					<p class="about-textbox-paddingbox-5">
+	    						<span>
+	    							<i class="fa fa-map-marker" aria-hidden="true"></i>
+	    						</span>
+	    						Address: 121 Rock Sreet, 21 Avenue,New York, NY 92103-9000
+	    					</p>
+	    					<p class="about-textbox-paddingbox-6">
+	    						<span>
+	    							<i class="fa fa-calendar" aria-hidden="true"></i>
+	    						</span>
+	    						Date of Birth: Aug 28th 1987
+	    					</p>
+	    					<div class="about-btn">
+		    					<a href="#" title="button">
+		    						DOWNLOAD CV 
+		    						<span>
+		    							<i class="fa fa-download" aria-hidden="true"></i>
+		    						</span>
+		    					</a>
+	    				    </div>
+	    				</div>
+	    				<div class="pose-absolut">
+	    					
+	    				</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+    <!----------------------Development------------------->
+    <div class="development">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-12">
+    				<div class="headdingbox">
+	    				<h1>Design and Concept Development</h1>
+	    				<p>Lorem ipsum dolor sit, consectetur some adipiscing elit eiusmod tempor incididu</p>
+    			    </div>
+    			</div>
+    		</div>
+    		<div style="margin: 62px auto 60px;">
+    			<div class="row">
+	    			<div class="col-sm-6 col-lg-4 col-md-6">
+	    				<div class="development-textbox-1">
+	    					<h4>Design</h4>
+	    					<ul>
+	    						<li>
+	    							<span>+</span>
+		    						Product Mockup
+		    					</li>
+	    						<li>
+	    							<span>+</span>
+	    							Branding
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Illustrations
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							UI/UX
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Websites
+	    						</li>
+	    					</ul>
+	    				</div>
+	    			</div>
+
+	    			<div class="col-sm-6 col-lg-4 col-md-6">
+	    				<div class="development-textbox-1">
+	    					<h4>Web Design</h4>
+	    					<ul>
+	    						<li>
+	    							<span>+</span>
+		    						Propotype
+		    					</li>
+	    						<li>
+	    							<span>+</span>
+	    							UI/UX
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Content Writing
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Website Hosting
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Website Analysis
+	    						</li>
+	    					</ul>
+	    				</div>
+	    			</div>
+
+	    			<div class="col-sm-6 col-lg-4 col-md-6">
+	    				<div class="development-textbox-1">
+	    					<h4>Development</h4>
+	    					<ul>
+	    						<li>
+	    							<span>+</span>
+		    						WordPress
+		    					</li>
+	    						<li>
+	    							<span>+</span>
+	    							Application Devloment
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Front-end
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							PHP
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Javascript
+	    						</li>
+	    					</ul>
+	    				</div>
+	    			</div>
+
+	    			<div class="col-sm-6 col-lg-4 col-md-6">
+	    				<div class="development-textbox-1">
+	    					<h4>Branding</h4>
+	    					<ul>
+	    						<li>
+	    							<span>+</span>
+		    						Brand equity audit
+		    					</li>
+	    						<li>
+	    							<span>+</span>
+	    							Audience analysis
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Competitive review
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Strategic direction
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Visual positioning
+	    						</li>
+	    					</ul>
+	    				</div>
+	    			</div>
+
+	    			<div class="col-sm-6 col-lg-4 col-md-6">
+	    				<div class="development-textbox-1">
+	    					<h4>Marketing</h4>
+	    					<ul>
+	    						<li>
+	    							<span>+</span>
+		    						SEO Marketing
+		    					</li>
+	    						<li>
+	    							<span>+</span>
+	    							SE Optimization
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Affiliate Marketing
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Keyword
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Article Writing
+	    						</li>
+	    					</ul>
+	    				</div>
+	    			</div>	
+
+	    			<div class="col-sm-6 col-lg-4 col-md-6">
+	    				<div class="development-textbox-1">
+	    					<h4>Video Editing</h4>
+	    					<ul>
+	    						<li>
+	    							<span>+</span>
+		    						Animation
+		    					</li>
+	    						<li>
+	    							<span>+</span>
+	    							MotionGraphics
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							After Effetcs
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							Cinema 4D
+	    						</li>
+	    						<li>
+	    							<span>+</span>
+	    							After Effects
+	    						</li>
+	    					</ul>
+	    				</div>
+	    			</div>	
+    		    </div>
+    		</div>	
+    	</div>
+    </div>
+
+    <!----------------------My Works-(gallery)------------>
+    <div class="gallery">
+        <div class="container-fluid">
+            <div class="gallery_heading">
+                <h1>
+	    			<b>My Works</b>
+	    		</h1>
+	    	    <p>Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Cras semper auctor neque vitae tempus quam.</p>
+            </div>
+            <div class="myworks-imgbox">
+	            <div class="row" id="trustgallery">
+	                <div class="col-md-6 col-sm-12 p-0">
+	                    <div class="item-inner">
+	                        <div class="item-img">
+	                            <img src="./image/img1.jpg" alt="./image/img1.jpg" class="img-fluid">
+	                            <div class="item" data-src="./image/img1.jpg">
+	                                <h1>3D LOGO MOCKUP</h1>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-6 col-sm-12 p-0">
+	                    <div class="item-inner">
+	                        <div class="item-img">
+	                            <img src="./image/img2.jpg" alt="./image/img2.jpg" class="img-fluid">
+	                            <div class="item" data-src="./image/img2.jpg">
+	                                <h1>MODERN FACADE</h1>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-6 col-sm-12 p-0">
+	                    <div class="item-inner">
+	                        <div class="item-img">
+	                            <img src="./image/img3.jpg" alt="./image/img3.jpg" class="img-fluid">
+	                            <div class="item" data-src="./image/img3.jpg">
+                                    <h1>SHOPPING BAG</h1>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-6 col-sm-12 p-0">
+	                    <div class="item-inner">
+	                        <div class="item-img">
+	                            <img src="./image/img4.jpg" alt="./image/img4.jpg" class="img-fluid">
+	                            <div class="item" data-src="./image/img4.jpg">
+	                                <h1>MINIMALISTIC DESIGN</h1>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-6 col-sm-12 p-0">
+	                    <div class="item-inner">
+	                        <div class="item-img">
+	                            <img src="./image/img5.jpg" alt="./image/img5.jpg" class="img-fluid">
+	                            <div class="item" data-src="./image/img5.jpg">
+	                                <h1>LUXURY BLACK FACADE</h1>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-6 col-sm-12 p-0">
+	                    <div class="item-inner">
+	                        <div class="item-img">
+	                            <img src="./image/img6.jpg" alt="./image/img6.jpg" class="img-fluid">
+	                            <div class="item" data-src="./image/img6.jpg">
+	                                <h1>MOCKUP WITH LOGO</h1>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-6 col-sm-12 p-0">
+	                    <div class="item-inner">
+	                        <div class="item-img">
+	                            <img src="./image/img7.jpg" alt="./image/img7.jpg" class="img-fluid">
+	                            <div class="item" data-src="./image/img7.jpg">
+	                                <h1>BUSINESS CARD</h1>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-6 col-sm-12 p-0">
+	                    <div class="item-inner">
+	                        <div class="item-img">
+	                            <img src="./image/img8.jpg" alt="./image/img8.jpg" class="img-fluid">
+	                            <div class="item" data-src="./image/img8.jpg">
+	                                <h1>IDENTITY DESIGN</h1>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-6 col-sm-12 p-0">
+	                    <div class="item-inner">
+	                        <div class="item-img">
+	                            <img src="./image/img9.jpg" alt="./image/img9.jpg" class="img-fluid">
+	                            <div class="item" data-src="./image/img9.jpg">
+	                                <h1>MODERN DESIGN</h1>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+            </div>
+            <p class="work-padding">
+	    		Images from
+	    		<a href="https://www.freepik.com/psd/logo" title="click me" target="_blank">Freepik</a>
+    	    </p>
+        </div>
+    </div>
+    
+    <!----------------------Expertise--------------------->
+    <section class="expertise">
+    	<div class="container">
+    		<div style="padding: 60px 0;">
+    			<div class="row">
+	    			<div class="col-sm-12 col-lg-4 col-md-4">
+	    				<div class="expertise-textbox">
+	    					<h5>MY SKILLS</h5>
+	    					<h1>Expertise</h1>
+	    					<p>
+	    						Two decades of hands-on experience and hundreds of millions in spend have yielded a diverse skillset that touches on most every function. This is a partial list.
+	    					</p>
+	    					<div class="expertise-btn">
+	    						<a href="https://nicepage.com/k/quiz-html-templates" title="button" target="_blank">
+	    						RESUME&nbsp;
+	    						<span>
+	    							<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+	    						</span>
+	    					</a>
+	    					</div>
+	    				</div>
+	    			</div>
+
+	    			<div class="col-sm-12 col-lg-4 col-md-4">
+	    				<div class="expertise-textbox pargr-padding">
+	    					<ul>
+	    						<li>
+	    							<span>—</span>
+	    							Brand Development & Advertising
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Direct-Response Marketing
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Search Marketing: SEO & PPC
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Digital Video & TV, including Super Bowl
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Streaming & Radio
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Out-of-Home
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Influencer Marketing: Podcast & YouTube
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Email Marketing, Design & Dev
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Social Media (Paid & Organic)
+	    						</li>
+	    					</ul>
+	    				</div>
+	    			</div>
+
+	    			<div class="col-sm-12 col-lg-4 col-md-4">
+	    				<div class="expertise-textbox pargr-padding">
+	    					<ul>
+	    						<li>
+	    							<span>—</span>
+	    							Website Design & Development
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Advertising Creative (All Mediums)
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Identity Design
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Conversion Rate Optimization
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Copywriting (Ad, Web, & Product)
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Media Planning & Buying (up to $100MM)
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Content Strategy & Execution
+	    						</li>
+	    						<li>
+	    							<span>—</span>
+	    							Business Development
+	    						</li>
+	    					</ul>
+	    				</div>
+	    			</div>
+	    		</div>
+    		</div>
+    	</div>
+    </section>
+
+    <!----------------------Profile----------------------->
+    <section class="profile">
+    	<div class="Profile-headdingbox">
+    		<h1>Profile</h1>
+    		<p>I'm a creative graphic designer</p>
+    	</div>
+    	<div class="profile-textbox">
+    		<div style="padding:30px;">
+    		    <div class="profile-imgbox"></div>
+    		</div>
+    		<div class="profile-about">
+    			<h3>About me</h3>
+    			<p class="profile-paragraph">I am creative graphic designer. I am&nbsp; an expert in the Adobe Creative Suit and have worked with a varied myriad of clients.&nbsp;Connecting your ideas to customer perception & all the digital dots in between...</p>
+    			<p class="profile-paragraph-1">
+    				Image from 
+    				<a href="https://www.freepik.com/photos/business" title="click me" target="_blank">Freepik</a>
+    			</p>
+    		</div>
+    		<div class="profile-details">
+    		    <h3>Details</h3>
+    		    <p class="paragraph-text">
+    		    	<span>Name:</span>
+    		    	<br>
+    		    	Hunter Norton
+    		    	<br>
+    		    	<span>Age:</span>
+    		    	<br>
+    		    	33 years
+    		    	<span>
+    		    		<br>
+    		    		Location:
+    		    	</span>
+    		    	<br>
+    		    	121 Rock Sreet, 21 Avenue,New York, NY 92103-9000
+    		    </p>
+    		    <div class="profile-icon">
+    		    	<a href="https://facebook.com/name">
+    		    		<i class="fa fa-facebook" title="facebook" aria-hidden="true"></i>
+    		    	</a>
+    		    	<a href="https://twitter.com/name">
+    		    		<i class="fa fa-twitter" title="twitter" aria-hidden="true" style=" margin-left: 10px;"></i>
+    		    	</a>
+    		    	<a href="https://www.instagram.com/name">
+    		    		<i class="fa fa-instagram" title="instagram" aria-hidden="true" style=" margin-left: 10px;"></i>
+    		    	</a>
+    		    </div>
+    		</div>
+    	</div>
+    </section>
+
+    <!----------------------Pricing Table----------------->
+    <section class="pricing">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-12">
+    				<div class="Pricing-headding">
+    					<h1>
+    						<span style="font-weight:700;">Pricing</span>
+    						Table
+    					</h1>
+    					<p>Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Cras semper auctor neque vitae tempus quam.</p>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="row" style="padding: 30px 0 60px 0;">
+    			<div class="col-md-4 col-sm-12 col-lg-4" style="border: 10px solid transparent;">
+    				<div class="Pricing-cardtextbox">
+    					<h4>Design</h4>
+    					<h3>$19,99</h3>
+    					<h6>Heading Here</h6>
+    					<div class="Pricing-cardmarbox"></div>
+    					<p style="padding-top: 10px;">Beautifully Designed</p>
+    					<p style="padding-top:11px;">100% Responsive</p>
+                        <p>Smooth Interactions</p>  
+                        <p style="padding-bottom: 30px;">Great Support</p>  
+                    	<a href="https://nicepage.com/website-builder" target="_blank" title="button" class="active">
+                    		<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </a>
+    				</div>
+    			</div>
+    			<div class="col-md-4 col-sm-12 col-lg-4" style="border: 10px solid transparent;">
+    				<div class="Pricing-cardtextbox">
+    					<h4>Development</h4>
+    					<h3>$59,99</h3>
+    					<h6>Heading Here</h6>
+    					<div class="Pricing-cardmarbox"></div>
+    					<p style="padding-top: 10px;">Beautifully Designed</p>
+    					<p style="padding-top:11px;">100% Responsive</p>
+                        <p>Smooth Interactions</p>  
+                        <p style="padding-bottom: 30px;">Great Support</p>  
+                    	<a href="https://nicepage.com/website-builder" target="_blank" title="button" class=" Pricing-btn">
+                    		<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </a>
+    				</div>
+    			</div>
+    			<div class="col-md-4 col-sm-12 col-lg-4" style="border: 10px solid transparent;">
+    				<div class="Pricing-cardtextbox">
+    					<h4>Customization</h4>
+    					<h3>$119,99</h3>
+    					<h6>Heading Here</h6>
+    					<div class="Pricing-cardmarbox"></div>
+    					<p style="padding-top: 10px;">Beautifully Designed</p>
+    					<p style="padding-top:11px;">100% Responsive</p>
+                        <p>Smooth Interactions</p>  
+                        <p style="padding-bottom: 30px;">Great Support</p>  
+                    	<a href="https://nicepage.com/website-builder" target="_blank" title="button" class="active">
+                    		<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <!----------------------counter---------------------->
+    <section class="roshani-counter">
+    	<div class="container">
+    		<div class="row"> 
+    			<div class="col-12">
+    				<div class="counter-box">
+    					<div class="row">
+    						<div class="col-md-6 col-lg-3 col-sm-6">
+    							<div class="counter-text-box">
+    								<div class="counter-number">
+    									<h3 class="timer" data-to="288" data-speed="2000">288</h3>
+    								</div>
+    								<h5>HAPPY CUSTOMERS</h5>
+    							</div>
+    						</div>
+                            <div class="col-md-6 col-lg-3 col-sm-6">
+    							<div class="counter-text-box">
+    								<div class="counter-number">
+    									<h3 class="timer" data-to="158" data-speed="2000">158</h3>
+    								</div>
+    								<h5>PROJECT COMPLETED</h5>
+    							</div>
+    						</div> 
+    						<div class="col-md-6 col-lg-3 col-sm-6">
+    							<div class="counter-text-box">
+    								<div class="counter-number">
+    									<h3 class="timer" data-to="98" data-speed="2000">98</h3>
+    								</div>
+    								<h5>CUPS OF COFFEE</h5>
+    							</div>
+    						</div>
+    						<div class="col-md-6 col-lg-3 col-sm-6">
+    							<div class="counter-text-box">
+    								<div class="counter-number">
+    									<h3 class="timer" data-to="34" data-speed="2000">34</h3>
+    								</div>
+    								<h5>AWARDS</h5>
+    							</div>
+    						</div>  
+    					</div>
+    				</div>
+    				<p class="counter-paragraph">
+    					Image from
+    					<a href="https://www.freepik.com/psd/background" title="click me" target="_blank">Freepik</a>
+    				</p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <!----------------------Contact Me------------------->
+    <section class="Contact">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-5 col-lg-5 col-sm-12">
+    				<div class="Contact-paddingbox">
+    					<h6>JOIN MY NEWSLETTER</h6>
+    					<h2>Nam ultrices ultrices nec tortor pulvinar esteras loremips est orem.</h2>
+    					<p>
+    						121 Rock Sreet, 21 Avenue,New York
+    						<br>
+							Mon – Fri: 9:00 am – 8:00 pm,
+							<br>
+							Sat – Sun: 9:00 am – 10 pm
+							<br>
+							<a href="https://nicepage.com/c/education-html-templates" title="click me" target="_blank"> 
+								contacts@esbnyc.com 
+							</a>
+						</p>
+						<h2 style="margin:30px auto 0;">Follow us</h2>
+						<div class="Contact-icon-div">
+							<a href="https://facebook.com/facebook.com" title="facebook" target="_blank">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+							<a href="https://twitter.com/twitter.com" title="twitter" target="_blank">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.instagram.com/instagram.com" title="instagram" target="_blank">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+							</a>
+							<a href="https://linkedin.com/in/linkedin.com" title="linkedin" target="_blank">
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p style="margin: 37px auto 0;">©2021 Privacy policy</p>
+    				</div>
+    			</div>
+    			<div class="col-md-7 col-lg-7 col-sm-12">
+    				<div class="Contact-paddingbox-1">
+    					<h1>Contact Me</h1>
+    					<form>
+    						<div class="inputbox">
+    							<input type="text" id="name" placeholder="Enter your Name" required>
+    						</div>
+    						<div class="inputbox">
+	    					    <input type="email" id="email" placeholder="Enter a valid email address" required>
+	    					</div>
+	    					<div class="inputbox">    
+	    					    <textarea rows="5" cols="50" name="message" type="text" required placeholder="Enter your message"></textarea>
+	    					</div>
+	    					<div class="Contact-btn">
+	    						<!--<a href="#">SUBMIT</a>--->
+	    						<button type="submit" title="button">SUBMIT</button>
+	    					</div>
+    					</form>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <!----------------------Timer------------------------>
+    <section class="conceptual-timer" id="timers">
+    	<div class="container">
+    		<div class="row"> 
+    			<div class="col-12">
+    				<div class="timer-box">
+    					<div class="row">
+    						<div class="col-md-6 col-lg-3 col-sm-6">
+    							<div class="timer-text-box">
+    								<div class="timer-number">
+    									<h3 id="days">288</h3>
+    								</div>
+    								<h5>HAPPY CUSTOMERS</h5>
+    							</div>
+    						</div>
+                            <div class="col-md-6 col-lg-3 col-sm-6">
+    							<div class="timer-text-box">
+    								<div class="timer-number">
+    									<h3 id="hourse">158</h3>
+    								</div>
+    								<h5>PROJECT COMPLETED</h5>
+    							</div>
+    						</div> 
+    						<div class="col-md-6 col-lg-3 col-sm-6">
+    							<div class="timer-text-box">
+    								<div class="timer-number">
+    									<h3 id="minutes">98</h3>
+    								</div>
+    								<h5>CUPS OF COFFEE</h5>
+    							</div>
+    						</div>
+    						<div class="col-md-6 col-lg-3 col-sm-6">
+    							<div class="timer-text-box">
+    								<div class="timer-number">
+    									<h3 id="seconds">34</h3>
+    								</div>
+    								<h5>AWARDS</h5>
+    							</div>
+    						</div>  
+    					</div>
+    				</div>
+    				<p class="timer-paragraph">
+    					Image from
+    					<a href="https://www.freepik.com/psd/background" title="click me" target="_blank">Freepik</a>
+    				</p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <!---------------------Footer------------------------>
+    <div class="conceptual-footer">
+    	<p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+    	<p class="last-div">
+    		<a href="https://nicepage.com/website-templates" title="click me" target="_blank">Website Templates</a>
+    		created with
+    		<a href="https://nicepage.com/" title="click me" target="_blank"> Website Builder Software.</a>
+    	</p>
+    </div>
+
+    <!------------------------------------------->
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/lightgallery-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="./js/script.js"></script>
+
+    <!--------------navbar-menubar---(on click)--------->
+    <script type="text/javascript">
+    	<!---------cart button-(on click button)------------->
+
+		function cartFunction() {
+		   var element = document.getElementById("JSheadercart");
+		   element.classList.add("show-header-cart");
+		}
+
+	   <!-------remove button--(close button)------>
+		function cartRK() {
+		   var element = document.getElementById("JSheadercart");
+		   element.classList.remove("show-header-cart");
+		}
+    </script>  
+</body>
+</html>
